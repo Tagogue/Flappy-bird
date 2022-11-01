@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  user-select: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+header {
+  margin: 0 auto;
+  width: 431px;
+  overflow: hidden;
+}
+h1 {
+  background: url(./media/flappy-bird-set.png) 0% 340px;
+  padding: 1.2rem 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  height: 45px;
+}
+.spans{
+  width: 35px;
+  position: absolute;
+  top: 32px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 999;
+}
+.spans span{
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  margin-top: 6px;
+  color: white;
+  background: white;
+  transition: 0.3s;
+}
+.spans span:nth-child(1){
+  margin-top: 0;
+}
+.toogle span:nth-child(2){
+  opacity: 0;
+  display: none;
+}
+.toogle span:nth-child(1){
+  transform: rotate(45deg);
+  position: relative;
+  top: 11px;
+}
+.toogle span:nth-child(3){
+  transform: rotate(-45deg);
+  position: relative;
+}
+.menu{
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  height: 200px;
+  transition: 0.3s;
+  opacity: 0.8;
+  background: rgb(7, 7, 7);
+}
+.top0{
+  top: 0;
+}
+h3{
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+h2{
+  color: white;
+  text-align: center;
+  font-size: 29px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+
+  transform: translate(-50%);
+}
+.discord{
+  text-decoration: none;
+  font-size: 29px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 80px;
+}
+.score-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 6px;
+  font-size: 23px;
+  background: #5EE270;
+  align-items: center;
+  height: 26px;
+}
